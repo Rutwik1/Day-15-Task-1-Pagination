@@ -1,0 +1,52 @@
+.container {
+  background-color: rgb(173, 220, 248);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.user-data {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: center;
+}
+
+.card-div {
+  width: 20%;
+}
+.card:hover {
+  scale: 1.1;
+}
+.card-body {
+  background: linear-gradient(
+    to right,
+    rgb(243, 160, 160),
+    rgb(233, 233, 122),
+    rgb(106, 106, 216)
+  );
+}
+.card-body h3 {
+  font-size: 20px;
+}
+.card-body h5 {
+  font-size: 10px;
+}
+.pagination-div {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width:768px){
+  .user-data{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-div{
+    width: 100%;
+  }
+  .pagination-div div{
+    width: 100%;
+    
+  }
+}
